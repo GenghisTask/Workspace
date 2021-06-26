@@ -21,14 +21,13 @@ New use cases :
 
 The easiest way is to [fork this project](https://github.com/GenghisTask/Management/fork) and run : 
 
-```docker run -p 3000:3000 -e GIT_BRANCH=main -e GIT_REPO='ssh://git@github.com:GenghisTask/Management.git' --network=host --rm genghistask/ui```
+```docker run -p 3000:3000 -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host --rm genghistask/ui```
 
-(If you do not fork and change GIT_REPO url to match your fork you may not be able to save your modifications, tasks, schedule, etc...)
-
+Remember to change GIT_REPO url to match your fork, for example : GIT_REPO='ssh://git@github.com/<YouGitHub>/Management.git'
 
 ## Configure
 
-You can use the app right away, but it's best to configure it properly (mainly create a ssh key pair) to be able to save your modifications.
+You can use the app right away, but it's best to configure it properly (mainly create a ssh key pair) to be able to save your modifications. If you do not fork and change GIT_REPO url to match your fork like GIT_REPO='ssh://git@github.com/<YouGitHub>/Management.git' you may not be able to save your modifications, tasks, schedule, etc...
 
 If you start the application for the first time, it reveals three tasks. You can run the task in order to configure the application if you don't want to do it manually.
 1/ You need to create a ssh key pair for the app. Run the first task (start arrow on the graph) to generate a key. Retrieve the public key from the stdout log file and add it to the remote git repository fork.
