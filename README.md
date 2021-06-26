@@ -23,7 +23,7 @@ The easiest way is to [fork this project](https://github.com/GenghisTask/Managem
 
 ```docker run -p 3000:3000 -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host --rm genghistask/ui```
 
-Remember to change GIT_REPO url to match your fork, for example : GIT_REPO='ssh://git@github.com/<YouGitHub>/Management.git'
+Remember to change GIT_REPO url to match your fork, for example : GIT_REPO='ssh://git@github.com/YouGitHub/Management.git'
 
 ## Configure
 
