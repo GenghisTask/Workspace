@@ -1,0 +1,85 @@
+[
+  {
+    "collection": "/api/swagger/jobs",
+    "name": "/4834436010841332",
+    "modifiedOn": "2021-06-26T08:06:39.035Z",
+    "data": {
+      "name": "ls",
+      "command": "test_ls.sh",
+      "id": 4834436010841332
+    },
+    "createdOn": "2021-06-26T08:06:39.035Z"
+  },
+  {
+    "collection": "/api/swagger/jobs",
+    "name": "/7425743978450202",
+    "modifiedOn": "2021-06-26T08:04:48.167Z",
+    "data": {
+      "name": "docker test",
+      "command": "test_ls.sh",
+      "environment_id": "debian",
+      "id": 7425743978450202
+    },
+    "createdOn": "2021-06-26T08:04:48.167Z"
+  },
+  {
+    "collection": "/api/swagger/jobs",
+    "name": "/7425743978450203",
+    "modifiedOn": "2021-06-26T08:04:48.167Z",
+    "data": {
+      "name": "my ssh key",
+      "command": "cat_ssh_key.sh",
+      "environment_id": "debian",
+      "id": 7425743978450203
+    },
+    "createdOn": "2021-06-26T08:04:48.167Z"
+  },
+  {
+    "collection": "/api/swagger/jobs",
+    "name": "/7425743978450204",
+    "modifiedOn": "2021-06-26T08:04:48.167Z",
+    "data": {
+      "name": "ssh test",
+      "command": "test_ls.sh",
+      "environment_id": "some-ssh-host",
+      "id": 7425743978450204
+    },
+    "createdOn": "2021-06-26T08:04:48.167Z"
+  },
+  {
+    "collection": "/api/swagger/jobs",
+    "name": "/6245824037527546",
+    "modifiedOn": "2021-06-26T08:09:17.245Z",
+    "data": {
+      "name": "node",
+      "command": "test_node.js",
+      "environment_id": "node",
+      "id": 6245824037527546
+    },
+    "createdOn": "2021-06-26T08:09:17.245Z"
+  },
+  {
+    "collection": "/api/swagger/jobs",
+    "name": "/1229624322103556",
+    "modifiedOn": "2021-06-26T08:20:13.116Z",
+    "data": {
+      "name": "python",
+      "command": "test_python.py",
+      "id": 1229624322103556
+    },
+    "createdOn": "2021-06-26T08:20:13.116Z"
+  },
+  {
+    "collection": "/api/swagger/jobs",
+    "name": "/8755200025877182",
+    "data": {
+      "name": "test mysql",
+      "command": "test_mysql.sql",
+      "environment_id": "mysql",
+      "id": 8755200025877182,
+      "forward_env": false
+    },
+    "createdOn": "2021-06-26T07:20:58.627Z",
+    "modifiedOn": "2021-06-26T07:20:58.627Z"
+  }
+]

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  debian:
+    image: debian:stable-slim
+  node:
+    image: node:14-slim
+  mysql:
+    image: mariadb
+    entrypoint: mysql -h 127.0.0.1 -uroot -p$MYSQL_PASSWORD
+    network_mode: host
+  ansible:
+    image: ansible/ansible-runner

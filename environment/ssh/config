@@ -1,0 +1,7 @@
+Host some-ssh-host
+  HostName 127.0.0.1
+  Compression yes
+  User ubuntu
+  StrictHostKeyChecking no
+  BatchMode yes
+  Port 2022
