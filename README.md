@@ -8,6 +8,8 @@ GenghisTask is an open source, lightweight and secured replacement for tools suc
 - Launch a periodic rsync backup of a folder
 - Manage tasks with an UI, know what's going on and debug without hassle
 
+![illustration](./illustration.png)
+
 New use cases :
 - I need to launch my collection of usefull script on demand unscheduled
 - I need a centralized way to manage the several crontab and tasks of several server
