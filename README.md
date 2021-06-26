@@ -21,7 +21,7 @@ New use cases :
 
 The easiest way is to [fork this project](https://github.com/GenghisTask/Management/fork) and run : 
 
-```docker run -p 3000:3000 -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host --rm genghistask/ui```
+```docker run -p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock  -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host --rm genghistask/ui:1.1```
 
 Remember to change GIT_REPO url to match your fork, for example : GIT_REPO='ssh://git@github.com/YouGit/Workspace.git'
 
