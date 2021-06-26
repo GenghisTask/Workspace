@@ -21,7 +21,7 @@ New use cases :
 
 The easiest way is to [fork this project](https://github.com/GenghisTask/Management/fork) and run : 
 
-```docker run -p 3000:3000 -e GIT_REPO='ssh://git@github.com:GenghisTask/Management.git' --network=host --rm genghistask/ui```
+```docker run -p 3000:3000 -e GIT_BRANCH=main -e GIT_REPO='ssh://git@github.com:GenghisTask/Management.git' --network=host --rm genghistask/ui```
 
 (If you do not fork and change GIT_REPO url to match your fork you may not be able to save your modifications, tasks, schedule, etc...)
 
