@@ -1,5 +1,10 @@
 # GenghisTask - Workspace
 
+![ARM Friendly](https://img.shields.io/badge/-Pi?style=social&logo=RaspberryPi)
+![M1 Ready](https://img.shields.io/badge/-M1?style=social&logo=apple)
+![x64](https://img.shields.io/badge/-intel?style=social&logo=intel)
+![amd64](https://img.shields.io/badge/-intel?style=social&logo=amd)
+
 GenghisTask the task scheduler. This is your workspace, the first part of the application : A remote git repository where the source code of each task will be under version control.
 
 ## What is it ?
@@ -23,7 +28,18 @@ New use cases :
 
 The easiest way is to [fork this project](https://github.com/GenghisTask/Management/fork) and run : 
 
-```docker run --name genghis -p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock  -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host --rm genghistask/ui:1.5```
+```docker run  -v /var/run/docker.sock:/var/run/docker.sock  -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host  genghistask/ui:1.6```
+
+| Argument                                                | Description                                                                        | Default                                      |
+|---------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------|
+| -p 3000:3000                                            | Forward host port towards the port 3000 of the next.js server inside the container | 3000                                         |
+| -e GIT_BRANCH=main                                      | Git Branch used by the application where your modification will be saved           | master                                       |
+| -e GIT_REPO='ssh://git@github.com/YouGit/Workspace.git' | Git repository where your modifications are fetched or saved                       | https://github.com/GenghisTask/Workspace.git |
+| --network=host                                          | Forward all host port                                                              | not required                                 |
+| --rm                                                    | Delete all unsaved modification when the container will be stopped                 | not required                                 |
+| -v `pwd`/workspace/:/app/data/api                       | Edit the workspace directly from the host                                          | not required                                 |
+| genghistask/ui:1.6                                      | This docker image                                                                  | latest                                       |
+
 
 Remember to change GIT_REPO url to match your fork, for example : GIT_REPO='ssh://git@github.com/YouGit/Workspace.git'
 
