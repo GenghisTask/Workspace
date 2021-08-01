@@ -28,7 +28,7 @@ New use cases :
 
 The easiest way is to [fork this project](https://github.com/GenghisTask/Management/fork) and run : 
 
-```docker run  -v /var/run/docker.sock:/var/run/docker.sock  -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host  genghistask/ui:1.7```
+```docker run  -v /var/run/docker.sock:/var/run/docker.sock  -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host  genghistask/ui:1.8```
 
 | Argument                                                | Description                                                                        | Default                                      |
 |---------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------|
