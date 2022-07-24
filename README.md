@@ -28,7 +28,7 @@ New use cases :
 
 The easiest way is to [fork this project](https://github.com/GenghisTask/Management/fork) and run : 
 
-```docker run  -v /var/run/docker.sock:/var/run/docker.sock  -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host  genghistask/ui:1.8```
+```docker run  -v /var/run/docker.sock:/var/run/docker.sock  -e GIT_BRANCH=main -e GIT_REPO='https://github.com/GenghisTask/Workspace.git' --network=host  genghistask/ui:2.0.0```
 
 | Argument                                                | Description                                                                        | Default                                      |
 |---------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------|
@@ -38,7 +38,7 @@ The easiest way is to [fork this project](https://github.com/GenghisTask/Managem
 | --network=host                                          | Forward all host port                                                              | not required                                 |
 | --rm                                                    | Delete all unsaved modification when the container will be stopped                 | not required                                 |
 | -v `pwd`/workspace/:/app/data/api                       | Edit the workspace directly from the host                                          | not required                                 |
-| genghistask/ui:1.6                                      | This docker image                                                                  | latest                                       |
+| genghistask/ui:2.0.0                                      | This docker image                                                                  | latest                                       |
 
 
 Remember to change GIT_REPO url to match your fork, for example : GIT_REPO='ssh://git@github.com/YouGit/Workspace.git'
