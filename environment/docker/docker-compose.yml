@@ -10,4 +10,34 @@ services:
     entrypoint: mysql -h 127.0.0.1 -uroot -p$MYSQL_PASSWORD
     network_mode: host
   ansible:
+    build: ./ansible/ansible-runner/
     image: ansible/ansible-runner
+    network_mode: host
+    working_dir: /data
+    volumes:
+        - $PWD/ssh:/root/.ssh/
+        - $PWD/$WORKSPACE:/data:rw
+  imagemagic:
+    image: v4tech/imagemagick
+  jupyter:
+    image: jupyter/scipy-notebook
+    volumes:
+      - $PWD:/home/jovyan/work
+    user: jovyan
+    working_dir: /home/jovyan
+  gitlab-runner:
+    image: gitlab/gitlab-runner
+    entrypoint: ["/usr/bin/bash", "-c" ]
+    volumes:
+      - $PWD:$PWD
+      - /var/run/docker.sock:/var/run/docker.sock
+  github-runner:
+    image: efrecon/act:v0.2.24
+    entrypoint: ["/bin/sh", "-c" ]
+    volumes:
+      - $PWD:$PWD
+      - $PWD/data/api/.actrc:/root/.actrc
+      - /var/run/docker.sock:/var/run/docker.sock
+  kiwix-manage:
+    image: kiwix/kiwix-serve
+    entrypoint: ["/usr/bin/sh", "-c" ]
